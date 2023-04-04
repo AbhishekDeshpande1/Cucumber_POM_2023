@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="83.85" tests="3" skipped="0" failures="0" errors="0">
+<testcase classname="Test and verify End to End Checkout flow" name=": User create account on website - Example #1.1" time="31.093">
+<system-out><![CDATA[
+Given User open application.................................................passed
+Given User click on new customer register button............................passed
+When User enter personal details with Firstname as "Abhi",LastName as "Deshpande",Email as "dsw9fg@aabhjsqsssa01sssaawqpadwwwwsffwopmail.com",Telephone as "7876343400".passed
+And User enter password as "Test@123" and confirm password as "Test@123"....passed
+And Accept term and condition...............................................passed
+Then User click on continue button to create account........................passed
+And User confirm account has been created and click on continue.............passed
+And User click on continue after account got created........................passed
+And Verify user is on My Account page.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test and Verify end to end Buy Product flow" name="Add Product to card" time="19.273">
+<system-out><![CDATA[
+Given User is on homepage...................................................passed
+And User click on Laptop and Notebooks menu.................................passed
+And User click on show all Laptop and Notebooks.............................passed
+When User select HP Laptopn to buy..........................................passed
+And User click on add to cart button........................................passed
+And User click on shopping cart link........................................passed
+And User click on checkout to add billing detials...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test and Verify end to end Buy Product flow" name="Add Billing details to buy order - Example #1.1" time="33.394">
+<system-out><![CDATA[
+Given User is on checkout page..............................................passed
+When User enter Billing Details with Firstname as "Abhishek" ,Lastname as "Deshpande",Address as "NaviMumbai",City as "Mumbai",Postcode as "400709",Country as "<County>",State as "Maharahstra".passed
+And User click on continue button for delivery details......................passed
+And User select delivery details............................................passed
+And User click on continue button for delivery method.......................passed
+And User accept term and conditions for delivery............................passed
+And User click on continue for payement method..............................passed
+And User click on continue button for confirm order.........................passed
+Then User click on confirm order button.....................................passed
+And User verify order has been placed.......................................passed
+]]></system-out>
+</testcase>
+</testsuite>
